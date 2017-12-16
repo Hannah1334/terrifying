@@ -1,0 +1,926 @@
+<style>
+body{
+background-color:#000000;
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
+background-position:left !important; 
+background-size:contain;
+}
+
+::-webkit-scrollbar {width: 5px; height: 5px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #666666;}
+
+#bigtitle1 {
+position:absolute;
+width:40%;
+height:10%;
+left:30%;
+top:10%;
+text-align:center;
+color:#666666;
+font-size:400%;
+font-family:Miss Fajardose;
+letter-spacing:10px;
+}
+
+#bigtitle2 {
+position:absolute;
+width:40%;
+height:10%;
+left:30%;
+top:80%;
+text-align:center;
+color:#666666;
+font-size:300%;
+font-family:Miss Fajardose;
+letter-spacing:10px;
+}
+
+#bigtab1 {
+position:absolute;
+border:1px solid #ffffff;
+width:20%;
+height:50%;
+top:25%;
+left:15%;
+background-image: url('https://i.imgur.com/JcLLgft.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bigtab1:hover {
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bigtab2 {
+position:absolute;
+border:1px solid #ffffff;
+width:20%;
+height:50%;
+top:25%;
+left:40%;
+background-image: url('https://i.imgur.com/uDx8hTz.gif') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bigtab2:hover {
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bigtab3 {
+position:absolute;
+border:1px solid #ffffff;
+width:20%;
+height:50%;
+top:25%;
+left:65%;
+background-image: url('https://i.imgur.com/g6fc56x.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bigtab3:hover {
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.bigtabs {
+display:block;
+width:100%;
+height:100%;
+opacity:0;
+text-align:center;
+color:#666666;
+font-size:100%;
+font-family:Racing Sans One;
+letter-spacing:5px;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.bigtabs:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15 {
+display: none;
+}
+
+#content {
+position:absolute;
+width:100%;
+height:100%;
+top:0%;
+left:0%;
+background-color:#000000;
+}
+
+#idbox1 {
+position:absolute;
+border:1px solid #9F000F;
+width:12%;
+height:24%;
+left:25.5%;
+top:20%;
+background-image: url('https://i.imgur.com/CBz34JN.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#idbox1:hover {
+background-image: url('https://i.imgur.com/fwCESx8.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#liltabbox1 {
+position:absolute;
+padding:1%;
+background-color:#222222;
+border:1px solid #9F000F;
+width:10%;
+height:30%;
+top:45%;
+left:25.5%;
+}
+
+#contentbox1 {
+position:absolute;
+overflow:auto;
+padding:1%;
+background-color:#222222;
+border:1px solid #9F000F;
+width:30%;
+height:45%;
+top:30%;
+left:38%;
+color:#ffffff;
+font-size:80%;
+font-family:Barlow Semi Condensed;
+}
+
+#liltitle1 {
+position:absolute;
+padding:1%;
+width:30%;
+height:4%;
+top:20%;
+left:38%;
+color:#9F000F;
+font-family:Barlow Semi Condensed;
+font-size:200%;
+text-align:center;
+letter-spacing:10px;
+}
+
+.tabs1 {
+display:block;
+width:98%;
+height:10%;
+margin-left:1%;
+margin-top:14%;
+margin-bottom:15%;
+border:1px solid #9F000F;
+background-color:#000000;
+text-align:center;
+color:#666666;
+font-size:100%;
+font-family:Racing Sans One;
+letter-spacing:5px;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs1:hover {
+background-color:#222222;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#idbox2 {
+position:absolute;
+border:1px solid #151B8D;
+width:12%;
+height:24%;
+left:25.5%;
+top:20%;
+background-image: url('https://i.imgur.com/v2NIegI.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#idbox2:hover {
+background-image: url('https://i.imgur.com/n3ElYJm.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#lilbasicbox2 {
+position:absolute;
+overflow:auto;
+padding:1%;
+background-color:#cccccc;
+border:1px solid #151B8D;
+width:10%;
+height:30%;
+top:45%;
+left:25.5%;
+color:#000000;
+font-size:60%;
+font-family:Barlow Semi Condensed;
+}
+
+#liltabbox2 {
+position:absolute;
+width:30%;
+height:.25%;
+left:39.5%;
+top:75%;
+}
+
+#contentbox2 {
+position:absolute;
+overflow:auto;
+padding:1%;
+background-color:#cccccc;
+border:1px solid #151B8D;
+color:#000000;
+font-size:80%;
+font-family:Barlow Semi Condensed;
+width:30%;
+height:40%;
+top:30%;
+left:38%;
+}
+
+#liltitle2 {
+position:absolute;
+padding:1%;
+width:30%;
+height:4%;
+top:20%;
+left:38%;
+color:#151B8D;
+font-family:Barlow Semi Condensed;
+font-size:200%;
+text-align:center;
+letter-spacing:10px;
+}
+
+.tabs2 {
+display:inline-block;
+width:23%;
+height:1200%;
+margin-top:1.5%;
+border:1px solid #151B8D;
+background-color:#222222;
+text-align:center;
+color:#3D43B5;
+font-size:60%;
+font-family:Racing Sans One;
+letter-spacing:4px;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs2:hover {
+background-color:#000000;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#idbox3 {
+position:absolute;
+border:1px solid #4A338F;
+width:12%;
+height:24%;
+left:25.5%;
+top:20%;
+background-image: url('https://i.imgur.com/zMyglnW.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#idbox3:hover {
+background-image: url('https://i.imgur.com/8IDyhTz.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#liltabbox3 {
+position:absolute;
+padding:1%;
+background-color:#00000D;
+border:1px solid #4A338F;
+width:10%;
+height:30%;
+top:45%;
+left:25.5%;
+}
+
+#contentbox3 {
+position:absolute;
+overflow:auto;
+padding:1%;
+background-color:#00000D;
+border:1px solid #4A338F;
+width:30%;
+height:45%;
+top:30%;
+left:38%;
+color:#ffffff;
+font-size:80%;
+font-family:Barlow Semi Condensed;
+}
+
+#liltitle3 {
+position:absolute;
+padding:1%;
+width:30%;
+height:4%;
+top:20%;
+left:38%;
+color:#4A338F;
+font-family:Barlow Semi Condensed;
+font-size:200%;
+text-align:center;
+letter-spacing:10px;
+}
+
+.tabs3 {
+display:block;
+width:98%;
+height:10%;
+margin-left:1%;
+margin-top:14%;
+margin-bottom:15%;
+border:1px solid #4A338F;
+background-color:#000000;
+text-align:center;
+color:#7C65C1;
+font-size:100%;
+font-family:Racing Sans One;
+letter-spacing:4px;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs3:hover {
+background-color:#00003F;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#innertabbox1 {
+position:absolute;
+width:2%;
+height:4%;
+top:48%;
+left:72%;
+}
+
+#innertabbox2 {
+position:absolute;
+width:2%;
+height:4%;
+top:48%;
+left:21%;
+}
+
+.tabs {
+display:block;
+padding: 1%;
+width:100%;
+height:100%;
+border-radius:100%;
+border:1px solid #ffffff;
+background-color:#000000;
+text-align:center;
+color:#ffffff;
+font-size:170%;
+font-family:Racing Sans One;
+letter-spacing:4px;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+background-color:#666666;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+h1 {
+color:#151B8D;
+border-bottom:1px dotted #151B8D;
+font-family:Racing Sans One;
+font-size:100%;
+text-align:center;
+}
+
+b {
+color:#666666;
+font-family:Racing Sans One;
+font-size:100%;
+letter-spacing:5px;
+}
+
+i {
+color:#666666;
+}
+
+a {
+color:#151B8D;
+}
+</style>
+
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Miss+Fajardose|Racing+Sans+One|Barlow+Semi+Condensed" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('contentbox1').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('contentbox2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('contentbox3').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="content">
+<div id="bigtitle1">
+Select your adversary...
+</div>
+
+<div id="bigtab1">
+<span class="bigtabs" onClick="changeNavigation ('tab1')">The Unity Familiar</span>
+</div>
+
+<div id="bigtab2">
+<span class="bigtabs" onClick="changeNavigation ('tab2')">The Master</span>
+</div>
+
+<div id="bigtab3">
+<span class="bigtabs" onClick="changeNavigation ('tab3')">The Necromancy Summon</span>
+</div>
+
+<div id="bigtitle2">
+...May your spells find their mark.
+</div>
+</div>
+
+<div id="tab1">
+<div id="innertabbox1"><span class="tabs" onClick="changeNavigation ('tab2')">></span></div>
+<div id="liltitle1">
+The Terror
+</div>
+<div id="idbox1">
+</div>
+<div id="liltabbox1">
+<span class="tabs1" onClick="changeNavigation1 ('tab4')">Racials</span>
+<span class="tabs1" onClick="changeNavigation1 ('tab5')">Passive</span>
+<span class="tabs1" onClick="changeNavigation1 ('tab6')">Ritualism</span>
+<span class="tabs1" onClick="changeNavigation1 ('tab7')">History</span>
+</div>
+<div id="contentbox1">
+<h1><FONT COLOR="#9F000F">Basic Information</FONT></h1>
+<b>Name:</b><br>The Terror<br>
+<b>True Age:</b><br>Unknown<br>
+<b>Physical Age:</b><br>Early-Mid Twenties<br>
+<b>Gender:</b><br>Female<br>
+<b>Sexuality:</b><br>Masochist/Pansexual<br>
+<b>Species:</b><br>Corrupted Faerie<br>
+<b>Race:</b><br>Southern Sidhe<br>
+<b>Tree:</b><br>Ritualism<br>
+<b>Rank:</b><br>True Practitioner<br>
+<b>Occupation:</b><br>Unity Familiar<br>
+<b>Height:</b><br>5'6"<br>
+<b>Weight:</b><br>120 lbs.
+<br><br>
+<h1><FONT COLOR="#9F000F">Detailed Information</FONT></h1>
+<b>Appearance</b><br>
+The Terror at her base is a very petit woman who ranges on the smaller side of the spectrum. Her physique doesn't look very threatening at all, in fact she has the lanky shape of malnourishment, her very bones visible against her skin on some parts of her body. Her skin itself is very ashen and pale, the thick black hair that hangs in natural waves all the way down her back contrasts the already pale color even further, often making her seem far more sickly than what she really is. The shape of her head is ovular, with a sharp jutting chin and distinct high cheekbones over a firm jawline allows her to look hauntingly pretty despite the sunken in state of her cheeks. Tattoos and scars cover almost every square inch of her skin, making her look like something from a painting or an adult coloring book.
+<br><br>
+<b>Attire</b><br>
+Clothing of any kind is a very rare sight, at the most she'll wear a loose black hooded cloak that conceals her face as well as her shape to allow her to appear ambiguous. Other than that, she often wears nothing at all.
+<br><br>
+<b>Personality</b><br>
+It is hard to describe something almost nonexistant. Since being turned into a Familiar, her mind has been completely subdued. She has no sense of individuality, and while it is possible for her mind to function in clever ways on its own she is completely reliant on her master to give her purpose. The Terror is nothing more than a sadistic and masochistic pet who finds joy and pleasure in self mutilation.
+</div>
+<div id="tab4">
+<h1><FONT COLOR="#9F000F">Faerie Racials</FONT></h1>
+<b>Mana Sensitivity</b><br>
+The Fae-kind are very sensitive to auras and mana, allowing them to feel or see when another being is drawing from their mana pool or activating their mana in general. (Only when not being specifically hidden by a spell of Mage rank or above, or other various means on purpose) 
+<br><br>
+<b>Enhanced Speed</b><br>
+The body of the Fae-kind is light, petite, and athletic. They can move triple the speed of the average human and the strongest Fae's speeds can rival that of a hummingbird's. 
+<br><br>
+<b>Enhanced Flexibility</b><br>
+Their bodies are as flexible as they are light, allowing them to contort their shapes into absurd formations. Something someone would expect to see in a circus act. 
+<br><br>
+<b>Burning Calories</b><br>
+The Fae-kind eat thousands upon thousands of calories on purpose and burn them off very quickly. Physical sugary foods is said to help their mental and magic stability, often allowing them slightly faster mana regeneration than what is average if consumed when their mana-pool is either completely drained or close to it. 
+<br><br>
+<b>Hidden Wings</b><br>
+Tribal-like wing markings cover the backs of the Fae-kind. These tribal markings cause their natural magical auras to manifest into the general shape of wings behind them. They cannot be used for flight or as extra limbs and are purely aesthetic.
+<br><br>
+<h1><FONT COLOR="#9F000F">Corrupted Fiend Racials</FONT></h1>
+<b>Harden</b><br>
+Her transformation has mutated her body in various different ways, one of the most notable being her blood's reaction to being exposed to high amounts of oxygen at one time. As a sort-of defense mechanism, she is now capable of pushing this blood out through her pores, allowing the forced clots to harden into black thorns of steel. After a certain point in their formation, these thorns will start ripping themselves easily through her flesh causing them to be added to by more and more blood. By the time they stop growing and reach their surface goal she will have grown one-inch-long-and-wide thorns all over her body. These are made with corrupted blood, so if a non-fiend's skin is broken by these thorns it will spread its infection inside of their bodies. Once they are fully grown, she has the option of pushing them the rest of the way out of her body, allowing them to shoot from her flesh like porcupine quills.
+<br><br>
+<b>Tough Skeleton</b><br>
+As her body has morphed to become a tool more than an actual body, her bones have increased in their natural durability from typical bones to steel grade materials. The downside to this being that healing takes longer than it normally would.
+<br><br>
+<b>Pop In, Pop Out</b><br>
+The Terror's pain tolerance has been trained so high she can now pop joints, muscles, bones, and other body parts willingly in and out of place without the negative pain-based effects that usually come with it. This allows her to perform some more sickening transformations and greatly increases her flexibility.
+<br><br>
+<b>Adrenaline Rush</b><br>
+When surrounded by at least two other significant signatures of Corruption, her body will begin to feel energized, strengthening her muscles and her physical capacity. She will gain double the strength of the average human (x2) as well as stamina (x2).
+<br><br>
+<h1><FONT COLOR="#9F000F">True Practitioner Racials</FONT></h1>
+<b>Mana Sensitivity (Upgrade)</b><br>
+The Fae-kind are very sensitive to auras and mana, allowing them to feel or see when another being is drawing from their mana pool or activating their mana in general. (Only when not being specifically hidden by a spell of Expert Mage rank or above, or other various means on purpose, as long as the signature is within a forty foot radius of The Terror)
+<br><br>
+<b>Wear'n'Tear</b><br>
+Her blood can be used to draw working runes if done properly. Since being exposed to high doses of oxygen causes it to harden, she must specifically place the bleeding flesh in certain areas so the hardening blood falls just right when joining its brethren to create a rune. She can also arrange pieces of her hardened blood together into a rune in order to cast a spell--assuming she actually has the spell she's trying to cast in her current inventory of course. If or when she manages to complete and activate a rune this way, her magic causes the usual steel toughness of her hardened blood to boost up to diamond durability.
+<br><br>
+<b>Contortionist</b><br>
+By bending her body into impossible shapes, she can make her own figure into runes and activate them this way to produce their intended effects. Doing so in this manner reduces the mana cost (and overall process) of imbuing a rune with magic in order to activate it at all. This ability also allows her to form runes out of pieces of her body, such as ripped dangling flesh. If her skin is torn and the permanent runes tattooed on her body are ruined by injury, she can lay her flesh down and use her blood to connect the dots, allowing her to make makeshift "mends" to herself so she can continue to activate the permanent runes etched into her body.
+</div>
+<div id="tab5">
+<h1><FONT COLOR="#9F000F">Passive</FONT></h1>
+<b>Numb</b><br>
+While active, The Terror grants her master a buff in natural pain tolerance which is four times that of the average human (x4) as well as a movement speed buff that is also four times that of the average human (x4). In order to remain active she must stay within one hundred feet of him, otherwise she will automatically be desummoned and will require more mana to bring back again after a six rotation cooldown.
+<br><br>
+<p align="center"><img style="width:20%;" src="https://i.imgur.com/NHoOrZI.jpg"/><img style="width:20%;" src="https://i.imgur.com/iWTadhU.png"/><img style="width:20%;" src="https://i.imgur.com/l1Nc5mC.jpg"/></p>
+</div>
+<div id="tab6">
+<h1><FONT COLOR="#9F000F">Corrupted Fiend; Ritualism (True Practitioner)</FONT></h1>
+<i>"Magic which recreates several forms of magic by imbuing Words of Power with Mana in the form of inscribed runic symbols. A mage of this tree may harness any tree of magic, but only in its lesser forms. A jack of all trades, ace of none tree, runes may be created for singular use (such as powerful explosions or traps), or cast upon an object to provide a spell of multiple uses (although the rune must be re-carved from time to time). Although this tree may start off as inherently weak, it's sheer utility and flexible spell roster make it an excellent choice for a well rounded mage."</i>
+<br><br>
+<b>Gaping Stomach</b><br>
+A large rune is etched into the caster's very flesh over their stomach, but in order to activate it they must rip the flesh in the marking's center open. The spell will cause a transformation to take place, creating a magical gaping maw in the caster's stomach. This second mouth can consume one equal ranked spell of pure energy, and multiple energy spells of lesser rank. It is also lined with strong muscles and tons of sharp diamond grade teeth allowing it to crush and consume physical things that come within its range. After being active for two rotations, stomach bile and Corruption build up together within the back of this mouth and can be vomited out in a large stream that can extend a good twenty feet away from its source, capable of melting through diamond grade materials. Upon deactivation, the rune returns the caster's stomach to its normal pre-ripped state.
+<br><br>
+<b>Steroids</b><br>
+Four of these permanent runes are tatooed onto the caster's body. Each one can be used individually for four rotations before requiring another four to cool down before it can be used again. This spell works to increase the physical speed, reaction time (mental processing speed), and physical strength of the caster four times. (x4)
+<br><br>
+<b>Sticky Fingers</b><br>
+Over the caster's palms rest runes that upon activation coat that part of her flesh in an adhesive substance strong enough to hold her body weight, but not strong enough to hinder her movement should she forcibly pull herself off of the said surface. This allows her to crawl up walls and across ceilings much like a spider.
+<br><br>
+<b>Frequency Enhancer</b><br>
+Hidden from view from the naked eye, thanks to being engraved onto the inside of her throat, this rune amplifies the sounds she makes with her mouth ten times over, causing her voice to boom loudly. All out screams and shrieks will be enough to deafen those within a thirty foot radius of her body (fifty feet for those with sensitive hearing racials or buffs active) to the point of permanent damage (unless healed by magical means), likely even drawing blood and causing intense pain.
+<br><br>
+<b>Giantess</b><br>
+Runes scrawled across and up the flesh of the caster's legs. Not only does activating this rune make her grow to be ten feet tall, it also allows her body to transform to be porportionate with her new height. In this form her strength is naturally four times that of the average human, but she moves at two-thirds their speed. This rune also grants her newfound massive form's flesh to harden to a diamond grade substance, making penetrating her defenses more difficult.
+<br><br>
+<b>New Arms</b><br>
+Two of these runes are located on the caster's body, and activating one causes her body to grow an extra fully functional arm that mimics whatever strength and size her current limbs are. It is possible for both to be active at once, allowing her two extra limbs to move and attack with.
+<br><br>
+<b>Big Shield, Little Shield</b><br>
+While a version of this rune is permanently attached to her body she can also easily recreate it through other means. Activations causes the rune to form a magical construct two feet in front of the caster, which manifests as a twenty foot tall and ten foot wide diamond grade barrier. In the center, five-by-five feet is taken up by a window-like hole. While the rest of the shield blocks against any lower grade attacks, the center protects against pure energy only, and is designed to be fired through by the caster it protects. Up to four of these can be active at one time, and they are not required to possess the central window if the caster does not wish them to.
+<br><br>
+<b>Marrow Launcher</b><br>
+When activated by normal means, this rune shoots a bone construct from its center at a specified target six times, like a turret. The bones are sharp like fat darts, and are able to pierce through diamond. When the ones etched into her body are activated, however, the rune will sharpen a bone in her arm and shoot it from inside of her body, then quickly regernate the lost bone in preparation to shoot again. Like its other version, it shoots six times, each time the diamond durability remaining the same. Once the sixth time has passed and the rune deactivates, her limbs return to normal.
+<br><br>
+<b>Exploding Marrow</b><br>
+Permanent runes etched into the caster's very bones can be activated as long as they are within an eighty foot radius of the caster. Once activated, they erupt into a thirty foot radius of an explosive blast of pure force, strong enough to rip through diamond grade constructs and materials.
+<br><br>
+<b>Spinal Tail</b><br>
+At the base of her spine is yet another permanent rune, which grows her an eight foot long bone tail made from the same fibers and materials of her spine, even connected to her body right beneath it. Unlike her actual bones, this tail is diamond grade, and as part of the spell a Marrow Launcher rune forms on the tail's tip allowing it to shoot six projectiles. If she desires to continue to allow this spell to drain her pool after six projectiles, two rotations of cooldown will be required before she is able to fire another six.
+<br><br>
+<b>Jump & Float</b><br>
+Tattooed into the bottoms of the caster's feet, this spell releases a torrent of air, the force of which can easily break through titanium grade materials and constructs. It is designed to push the caster up thirty feet into the air, and even allow them to levitate for short periods of time, or slow their fall to keep from damaging their legs when colliding with the earth.
+</div>
+<div id="tab7">
+<h1><FONT COLOR="#9F000F">How She Came To Be (Corrupted Unity Contracts)</FONT></h1>
+Before the invasion and hostile take over of the Faerie Realms, The Terror had a real name and an entire identity. The Dream called her "Raven" and made her a Practitioner of Ritualism, setting her on a Path of high utility. She was to be a servant, an engineer for her own Kingdom that put together clever ways to implement magic into various normal household items. She ended up starting a trend that spread across the world like wildfire, by making warpaint into aesthetically pleasing runes that passively boosted specific stats. 
+<br><br>
+She was highly regarded among her peers; they claimed her mind to be a special kind of clever, just the right thing for a utility based inventor. This proved to be a truthful and useful trait for her to have later on, when the battles began. As all kinds of Fae narrowly escaped the claws of their oppressors, she did so through clever traps and misdirections, using her skills as best as she could. Eventually she found herself involved with a resistance group, a collection of surviving Faeries, regardless of Tree and what the Dream painted as their Path, banding together to fight and free their world.
+<br><br>
+Here, Raven proved to be an asset of extreme value, and she worked close with an Enchantment-Faith Archmage known as Gossamer--another smart utility mage--to create tools and all sorts of buffs for her people to aid them in battle. Together, the resistance made progress, until the Enchantress was led away and their base of operations was attacked. Those who weren't massacred were imprisoned, subjected to continuous forms of horrible torture until their minds broke and they became docile obedient pets. Raven suffered this fate, and became a test subject herself for a Corruption Conversion of her own kind. As she rose from the ashes of her once normal body, she did not awaken as a freed beast, but rather a soul bound to a contract and a singular Xink. She had not survived the conversion on her own, and in an attempt to save her, had been made into a Unity Familiar.
+<br><br>
+To this day she serves the same master without question, long forgetting her birthname or even what life was like before her infection, knowing herself only as "The Terror."
+</div>
+</div>
+
+
+<div id="tab2">
+<div id="innertabbox2"><span class="tabs" onClick="changeNavigation ('tab1')"><</span></div>
+<div id="innertabbox1"><span class="tabs" onClick="changeNavigation ('tab3')">></span></div>
+<div id="liltitle2">
+Roran
+</div>
+<div id="idbox2">
+</div>
+<div id="lilbasicbox2">
+<h1>Basic Information</h1>
+<b>Name:</b><br>Roran<br>
+<b>True Age:</b><br>Unknown<br>
+<b>Physical Age:</b><br>Late Twenties/Early Thirties<br>
+<b>Gender:</b><br>Male<br>
+<b>Sexuality:</b><br>Heterosexual<br>
+<b>Species:</b><br>Corrupted Angelic<br>
+<b>Race:</b><br>Xink<br>
+<b>Trees:</b><br>Unity, Necromancy<br>
+<b>Rank:</b><br>High Duomancer<br>
+<b>Occupation:</b><br>Knight<br>
+<b>Height:</b><br>6'7"<br>
+<b>Weight:</b><br>180 lbs.
+</div>
+<div id="liltabbox2">
+<span class="tabs2" onClick="changeNavigation2 ('tab8')">History</span>
+<span class="tabs2" onClick="changeNavigation2 ('tab9')">Racials</span>
+<span class="tabs2" onClick="changeNavigation2 ('tab10')">Unity</span>
+<span class="tabs2" onClick="changeNavigation2 ('tab11')">Necromancy</span>
+</div>
+<div id="contentbox2">
+<h1>Detailed Information</h1>
+<b>Appearance</b><br>
+Tall and rather slender, from a distance it wouldn't be hard to mistake him for a female. It probably doesn't help that his thick white hair has been left to grow rather long and unruly, a thick mesh of curls almost reaching his knees! It is rather clear he hasn't had it cut for a very long time just by looking at the uneven shag of his bangs that annoyingly hang in his face and sometimes cover his eyes. Speaking of his eyes, they are a very deep blue in color and rather narrow. In fact, "narrow" is a good term to describe his entire face. With a jutting bone structure and angular features, despite how narrow the rectangular shape of his face really is he still retains a fairly handsome appearance. A singular dark blue--almost black--horn juts out from the top of his head, a stub next to the other side where a second should be suggesting he had lost it some time ago. A three foot tail of the same color extends from the base of his spine, covered in a strange set up of a jointed exoskeleton, allowing him to move his tail freely and flexibly about behind him. As stated before, his physical figure is only feminine in appearance from a distance. Despite how lean and thin he looks, beneath his pale flesh his body ripples with plenty of strong sinew and muscle.
+<br><br>
+<b>Personality</b><br>
+Snide, prideful, wicked. These words barely compare to the full extent of the very arrogant man's personality. He is brash, foolhardy, and inrecibly cocky, believing anyone who hasn't defeated him to be lesser beings and ants under his feet regardless of race or age. The only people he begrudgingly respects are those whom have earned it, usually by forcing him to submit on the battlefield. Even then, he only manages to feel respect for others of his own kind, any other race of being that defeats him will have an agenda formed against them and he will work his hardest to take them down.
+<br><br>
+<h1>High Duomancer Mediums</h1>
+<b>Eye of the Tamer</b><br>
+Upon reaching the rank of High Duomancer, two parts of Roran's body have been mutated by his magic to act as Mediums. The Medium for his Unity is his right eye, and while he can still see out of it the fleshy organ has been mutated into a solid sphere of diamond durability. It retains a unique passive ability that allows him to see his Unity summon--or at least its signature--through any nonmagic barriers or materials (or lower ranking magical materials and constructs), and allows him to see general mana signatures that aren't intentionally being hidden, or at least aren't being hidden by post High Mage spells (this includes signatures in magically imbued objects such as Artifacts, Runes, Enchanted Objects, etc etc) so long as both options are within a fifty foot radius of the caster. When activated, it allows his physical form to achieve an ethereal state before quickly zapping at high speeds right to the summon's side before becoming physical again, potentially allowing him to pass through walls and substances of lower rank than himself, assuming of course his summon is within a thirty foot radius of where his starting location was.
+<br><br>
+<b>Horn of the Master</b><br>
+His second bodily Medium is his last remaining horn, which has mutated into a diamond grade material in a similar fashion to the "Eye of the Tamer." The horn's passive ability doubles the distances his Necromancy summons can move away from him while still being able to remain active. (Note, this is a rather bogus ability, the only reason he has it is because he is an NPC) The Medium's active ability--or ability that requires acknowledgement and mana to activate--coats his body in a diamond grade aura made entirely out of Soul Fire. Direct contact with this aura will cause extreme damage to the soul, ending in an agonizing death if the contact is prolonged for more than one rotation. It also acts as a sort of armor, and can be given a physical intense heat to evaporate through water or keep the caster warm if need be. The horn also acts as a beacon, allowing him to find his summons (or vice versa) as long as they are still active, as they will have a natural attraction to the horn itself like moths to a flame.
+</div>
+<div id="tab8">
+<h1>The Great Fall</h1>
+Since the beginning of existence itself, as long as sentient beings roamed the various realities and worlds that stretched across the multiverse, moral alignments have dictated the difference between the relative terms of "good" and "evil." Quickly, creatures of all kinds from all planes divided themselves between these extremes, loosely being referred to as Angelics or Demonics depending on the general views on life they had and decisions they made.
+<br><br>
+As time passed and a new incredible race that could exist between the moral stigmas as they pleased, with generally chaotic and passionate moodswings. Both extremes of the spectrum between "good" and "evil" found that this new race--known as Humans--made powerful vessels especially where magic was considered, as well as tools which could be used for their own means. The problem was that the realities which humans occupied were vast in number, and ever growing, causing them to be nearly impossible to keep track of or even travel to. It was the "Angelic" race simply known as the Xinks who discovered the possible solution to this problem; a newborn world made from man's pent up mana, intent, and desire. A part of the Plane of Thought which burst apart in a bang and gave birth to an entire world, even a whole bunch of natural residents! Created by the minds and dreams of man, this place was like a hub world that could grant access to any and all human worlds, or at least the worlds humans occupied.
+<br><br>
+Finally! The perfect place to make a settlement, this would give them the greatest advantage! While the information about this land was supposed to be taken back to their allies in secret, one of their own defected and sold the information to their "Demonic" enemies for an insane price. When the Angelics finally arrived, the Demonics were waiting for them, and war was waged over who would control the land. While the Fae refused to ally themselves with either side, their armies were not formiddable enough to last, and they were quickly wiped out and captured. In the meantime, the darker and "evil" side of existence was working to poke holes in the defenses of their enemies. They sought out the race of the betrayer who brought information about this place to them in the first place, and arranged an audience with them. They spun fantastic tales, promising the noble and prideful people that if they helped them win the war, they would be the ones to care for, and rule over, the Faerie Realms. Falling into their own greed, the Xinks took them up on the offer, and used the combined powers of Corruption, and the element of surprise, to completely wipe out the competition, catching them at their most vulnerable. The promise was kept, and the newly "Fallen" creatures were left to become overlords of a ruined world.
+<br><br>
+<h1>Roran's Story</h1>
+Stuck in the pride of their own accomplishments, the Xinks grew cocky and lazy. They were certain the Fae would never revolt, their chains were nearly as heavy as the deadly workload. Rather than spend enough time training the next generation to be battle ready, they were all raised like kings, spoiled with their newfound slaves. Only a small number of warriors from highly revered bloodlines were put through intense training camps to effectively become Knights for the protection of the Crown. One of these Knights was a young man named Roran, son of the first Xink who defected and sold the secret information to the Demonics in the first place.
+<br><br>
+Roran embraced the mindset of his people, thirsting for ultimate power and the feeling of being on top. He was often a monster to his own slaves, abusive in every aspect he possibly could be, relishing in the fact that he owned living beings. Before too long, word of a small resistance group, a band of Faerie survivors that managed to avoid capture through the wars and up until this point. Among them was rumored to be a powerful Enchantress, and Roran became obsessed with proving to be a better mage and having domain over her. Upon her capture, thanks to a helpful contribution from her brother, he was able to murder and corrupt one of her closest allies, forcing the Practitioner Ritualist to be his ultimate Unity Familiar.
+<br><br>
+For several years he gloated, holding his supposed "victory" over the Enchantress' head, until one day she escaped from her hellish prison and successfully made it out of the Faerie Realms altogether. Angered, he vowed he would do everything in his power to take her down, even going so far as to take ownership of another life that is so precious to her...
+</div>
+<div id="tab9">
+<h1>Xink Racials</h1>
+<b>Aging</b><br>
+Natural born Xinks age with increase--and sometimes even decrease--in magical power. The higher ranked a Xink is, the older they get. Their bodies do not fully mature until they reach the highest natural rank they can attain, causing a majority of their race to appear very young. The elders mostly appear only around their mid-twenties! 
+<br><br>
+<b>Magic Bones</b><br>
+Xinks carry their mana in their bones, and their bones in themselves are completely translucent, which allows them to be all sorts of colors since the mana is very distinctly visible. Likewise, their natural bone density is as tough as cobalt. 
+<br><br>
+<b>Mana Membrane</b><br>
+Where their spine converts to a tail at its base and exits the body, it forms an exoskeletal three-foot tail. The bones on the outside are just as dense as the ones on the inside (cobalt toughness) and are also translucent, allowing mana to be visible. These tails end in a spaded tip that starts soft when they're babies and grows hard as they age. A Xink's tail acts as mana central, the membrane that allows them to use their mana at all. If it is removed their magic ability is crippled, and in some cases even causes death. 
+<br><br>
+<h1>Corrupted Fiend Racials</h1>
+<b>Twisted Blood</b><br>
+This particular Xink's very blood has been Corrupted by his magic and original means of death. It feeds off of foreign noncorrupt energies, breaking magical constructs and pure energies down when directly exposed to them like a powerful acid, the more powerful the magic the longer it takes to melt through. If transferred from one body into another through forced injection or contact between open wounds from both parties it will spread its infection like wildfire. Once the Corruption reaches the heart, it will kill its new host, and turn them into a Fiend as well.
+<br><br>
+<b>Decaying Mana</b><br>
+While the blood of the beast's focus is energy, the ambient magic's is flesh and nonmagic things whether they be sentient or not. Rather than eat away or destroy, Roran's mana in its base and raw form can spread the infectious nature of his magic like a disease, causing discoloration and disgusting cyst-like growths that spew black pus. Direct contact is incredibly painful and if the mana is continuously surrounding or pumped into a target it will eventually kill them. The higher ranked the target, the more time converting them to a Fiend takes.
+<br><br>
+<b>Magical Vision</b><br>
+His eyes are sensitive to non-Corrupted mana signatures in an almost professional sense, allowing him to discern the difference between a direct mana pool, a signature released from a magically imbued object, artifact, or other form of archaic item, and a spell whether it be an AoE, a plain projectile, or some kind of magically formed construct. It would take an army of mages to overwhelm this vision, although it is quite possible, and can't be turned off. Because of this, Roran had spent many days in preparation for war by training himself to fight blind and wear coverings over his eyes.
+</div>
+<div id="tab10">
+<h1>Corrupted Fiend; Unity Summoning (High Duomancer)</h1>
+<i>"Mages of this class enjoy a special irony; although mages are often powerful beings who devastate the battlefield with their raw power, Unity mages instead control powerful beings. Upon reaching the rank of Paige, a Unity mage obtains control over a being known as a familiar. Familiars are almost always biological creatures, but may take the form of animated objects, mechanical menaces, or even metaphysical spirits. Another familiar will be received at Beginner Mage, Adept Mage, High Mage, and another once you choose your alternate rank path, and yet another once the highest rank in your path has been achieved.. Familiars act as mediums to the Unity mage controlling them, meaning that any spells the mage is able to cast may be channeled or cast through the familiars. As an added bonus, each familiar grants it's controller some form of boon; an aspect of the creature's power is most common. A hawk may enhance one's eyesight, or a bear may bolster one's strength permanently. These aspects are more often than not passive abilities.​ (Akin to Stigmatism, the free spell slots a mage receives are used to upgrade existing familiars)"</i>
+<br><br>
+<b>The Terror</b><br>
+Despite the opportunity to have various Summons as he grew in power throughout his life, Roran has chosen to have only one, allowing her to be more powerful than what would be considered typical for those who practice this form of magic. The Terror is capable of existing within a one-hundred-fifty foot radius of her master without desummoning, however, once she has been destroyed or effectively killed he must wait a considerable amount of time before he can summon her again (seven rotations).
+<br>
+To see her detailed sheet and the Passive ability she offers her summoner, click the arrowed button on the left and jump to her content.
+</div>
+<div id="tab11">
+<h1>Corrupted Fiend; Necromancy (High Duomancer)</h1>
+<i>"The common Necromancer devotes their time to the collection of corpses, and the infusion of said corpses with their wicked mana. Through a unique mana type called Soul Fire, Necromancers may create artificial souls to be placed within the corpse of a once living being. Necromancers may also use this Soul Fire to assault their enemies; effects of Soul Fire vary from Necromancer to Necromancer, although it often damages the soul in some way. Necromancers may also use their magic to revive fallen comrades or enemies, reducing their will, but not their strength. A Necromancer may only revive mages of their current rank or below."</i>
+<br><br>
+<b>Foster</b><br>
+Foster is capable of existing within a one-hundred-foot radius of his summoner without desummoning, however, once he has been destroyed or effectively killed, Roran must wait a considerable amount of time before he can summon Foster again (six rotations).
+<br>
+To see his detailed sheet with all of his important traits and abilities, click the arrowed button on the right and jump to his content.
+<br><br>
+<b>Bone Pillars</b><br>
+This spell causes a diamond grade bone construct made entirely out of Soul Fire to rip up from under the ground. Individually, these spiked pillars can be up to ten feet tall and three feet wide, and even be formed fifty feet away from the caster. For an extra cost of mana he can cause a whole area that spans fifty feet out and is ten feet wide, to be absolutely filled with these spikes, all at once. The snap up is quick and undetectable without the means to track mana's movement through the earth that is at least post high mage in ranking. Even if not impaled by the Soul Fire constructs, just coming in contact with them will cause a "bleeding" effect on one's soul (which will cause immense uncomparable pain), and inflict the target with instantaneous rigor mortis. If not treated within seven rotations, the soul will bleed out, and the afflicted will die.
+<br><br>
+<b>Spectral Scythe</b><br>
+The caster enslaves a pair of tortured spirits, mutating and morphing them into a pair of scythe-shaped blades which are completely ethereal in themselves. They cannot be broken by magics of lower rank, and while they make no contact with the physical plane a single swipe through a target will cause the soul to be cut in half, leading to loss of consciousness and in most cases, death. While it is not required, the caster may also activate a second aspect of this spell that coats the edges of the blades in diamond grade Corrupted energy, allowing them to deal physical damage and spread Corruption into bodies and hosts through wounds. After being created, the spectral blades cannot be seen for three rotations, unless spirit based sensory of at least post high mage in ranking is used. They can remain active within an eighty foot radius around the caster, and while only two can be active at a time they can be continuously telekinetically manipulated until shot like projectiles or destroyed.
+<br><br>
+<b>Soul Fire Blades</b><br>
+Upon activation, this spell is capable of forming up to ten sword-constructs made entirely out of Soul Fire. While they are physical constructs, they do both physical damage through extreme burns (which can melt through diamond grade constructs) as well as direct damage to the soul itself. Direct contact with these blades will cause the flesh to rot, and spread Corruption through the victim's bloodstream (or similar network). While all ten are active, they will only move about as quickly as a typical arrow being shot from a bow, but when less than five are active they will move at four times that average shooting speed. They can be telekinetically controlled by the caster so long as they remain within a fifty foot radius, and can dormantly remain active as long as they are within a hundred foot radius of the Necromancer. After being shot off like a projectile, they can be retrieved if they haven't left the bigger radius.
+<br><br>
+<b>Leech</b><br>
+Rather than in a solid form, the caster dispenses Soul Fire in a toxic and heavy cloud of smoke that obstructs all kinds of vision (aside from the caster's) so long as no sensory spells at least post high mage in ranking are in use. If a target is within the radius of smoke, they will not notice the damage until it's two late, as it takes more than one rotation for the harmful effects to kick in. The second rotation triggers the body to stiffen with rigor mortis, then the third eats away at the flesh or body of the victim with Corrupted rot. If they are still within the radius for the fourth, their very souls will be consumed by the mist as though it were an acid. This spell can last for a total of five rotations, and requires three to cool down once it has been cast. The smog stretches a full sixty feet in every direction it possibly can.
+<br><br>
+<b>Draconic Steed</b><br>
+A giant dragon summon made entirely out of bones gathered from all kinds of dead bodies. While the details aren't symmetrical, this thirty foot long and twenty foot tall creature is capable of existing inside a hundred foot radius of its caster. In addition to its bones being diamond durability, it can cover its body in physical "Soul Fire" flames that cause burn damage as well as soul damage. It is also capable of spewing this same type of Soul Fire from its mouth in huge cones of flame that can stretch out sixty feet away from the beast and spread out to cover a forty foot radius at its very end. While capable of burning through diamond itself, contact with the flame may also corrupt the victim's very soul, and damn them to the life of Fiend-hood. After being active for six rotations, the massive beast explodes into a fifty-foot-radius explosion that is capable of breaking through titanium, although it sends the Soul Fire and diamond bones scattering dangerously across this radius. It can be re-summoned after three rotations of cooldown.
+<br><br>
+<b>Pack of Wolves</b><br>
+This spell allows the caster to summon up to six undead wolves, all standing roughly four feet tall and despite only being made of bones being held together at the joints by Soul Fire, are all extremely heavy, weighing in over two hundred pounds. Their bones, teeth, and claws are diamond grade, and while they only move at the rate of the average wolf and can individually remain active for four rotations (each requiring two to cool down), they can be used as moving mediums for the Necromancer to cast his Soul Fire spells from. They can move and exist as long as they remain within a hundred foot radius of the caster, who has complete mental control of these beasts and is able to communicate with them telepathically.
+<br><br>
+<b>Zombified Fae</b><br>
+A general resurrection spell that allows the caster to raise up to fifteen corpses within a fifty foot radius of himself. Their bodies will only remain iron in toughness and they will move at the pace of regular humans, with weak flesh. If these resurrected dead remain active for a total of four rotations, they deactivate by exploding into masses of disgusting Corrupted ooze that will rot away anything under diamond in durability and spread its infection like wildfire. Each individual explosion covers a radius of ten feet. Spell requires two rotations of cooldown before it can be recast.
+<br><br>
+<b>Fragment Blast</b><br>
+The caster shoots sharp bone darts from his palms which can travel up to fifty feet away from him at four times the speed of the average human. When coming in contact with a hard surface after being shot, they combust into Soul Fire explosions that cover a ten foot radius. The explosion itself is capable of ripping through diamond grade (or equivalent) attacks and/or spells/barriers. Contact with the Soul Fire will harm the soul and Corrupt the body, leaving the victim in dread-filled agony.
+<br><br>
+<b>Resurrection</b><br>
+Another general Necromancer spell that allows the caster to raise a being or creature from the dead, so long as enough of their body and soul remains behind for them to be raised. This can either be done to create a new summon or to simply give life back to one who has passed on. Physical contact must be made with the desired target while casting this spell, and can only be used on one person at a time.
+</div>
+</div>
+
+<div id="tab3">
+<div id="innertabbox2"><span class="tabs" onClick="changeNavigation ('tab2')"><</span></div>
+<div id="liltitle3">
+Foster
+</div>
+<div id="idbox3">
+</div>
+<div id="liltabbox3">
+<span class="tabs3" onClick="changeNavigation3 ('tab12')">Racials</span>
+<span class="tabs3" onClick="changeNavigation3 ('tab13')">Artificer</span>
+<span class="tabs3" onClick="changeNavigation3 ('tab14')">Faith</span>
+<span class="tabs3" onClick="changeNavigation3 ('tab15')">Enchantment</span>
+</div>
+<div id="contentbox3">
+<h1><FONT COLOR="#4A338F">Basic Information</FONT></h1>
+<b>Name:</b><br>Foster<br>
+<b>True Age:</b><br>Unknown<br>
+<b>Physical Age:</b><br>Early-Mid Twenties<br>
+<b>Gender:</b><br>Male<br>
+<b>Sexuality:</b><br>Heterosexual<br>
+<b>Species:</b><br>Corrupted Faerie<br>
+<b>Race:</b><br>Eastern Sidhe<br>
+<b>Trees:</b><br>Artificer (Faith + Enchantment)<br>
+<b>Rank:</b><br>High Archmage<br>
+<b>Occupation:</b><br>Necromancy Summon<br>
+<b>Height:</b><br>6'2"<br>
+<b>Weight:</b><br>175 lbs.
+<br><br>
+<h1><FONT COLOR="#4A338F">Detailed Information</FONT></h1>
+<b>Appearance</b><br>
+Despite seeming rather thin, plenty of thick muscle rests underneath his smooth skin. Since technically becoming an "Undead" creature, his skin has taken on an ashy white tone which looks sickly when compared to his rather dark black hair, but it takes nothing away from his handsome face and sharp features. High cheekbones and a set jaw with a slender chin almost give him a feminine look, even his violet eyes seem strangely remniscient of another living Faerie...
+<br><br>
+With tired eyes and a deceptive smile, he's a steady and strong presence, and carries himself with great pride. His posture is nearly perfect, and his attire is always "fancy" in some shape or form, thanks to the culture he was born into which holds one's outward appearance above all else.
+<br><br>
+<b>Personality</b><br>
+It is rather hard to determine what kind of man really sits in that mind, behind his many masks. Foster has proven to be able to shift between being genuinely friendly and devastatingly awful on a whim. He has insane amounts of self control, allowing him to change up his personality, or at least what people perceive it to be, depending on the situation he finds himself in. People often believe his emotions are what get the better of him, although no one is certain. Whatever the answer may be, there are some solid facts one may be able to determine about his personality:
+<br>
+First, he is a man of fact and reason.
+<br>
+Second, he loves his sister, of course.
+</div>
+<div id="tab12">
+<h1><FONT COLOR="#4A338F">Faerie Racials</FONT></h1>
+<b>Mana Sensitivity</b><br>
+The Fae-kind are very sensitive to auras and mana, allowing them to feel or see when another being is drawing from their mana pool or activating their mana in general. (Only when not being specifically hidden by a spell of Mage rank or above, or other various means on purpose) 
+<br><br>
+<b>Enhanced Speed</b><br>
+The body of the Fae-kind is light, petite, and athletic. They can move triple the speed of the average human and the strongest Fae's speeds can rival that of a hummingbird's. 
+<br><br>
+<b>Enhanced Flexibility</b><br>
+Their bodies are as flexible as they are light, allowing them to contort their shapes into absurd formations. Something someone would expect to see in a circus act. 
+<br><br>
+<b>Burning Calories</b><br>
+The Fae-kind eat thousands upon thousands of calories on purpose and burn them off very quickly. Physical sugary foods is said to help their mental and magic stability, often allowing them slightly faster mana regeneration than what is average if consumed when their mana-pool is either completely drained or close to it. 
+<br><br>
+<b>Hidden Wings</b><br>
+Tribal-like wing markings cover the backs of the Fae-kind. These tribal markings cause their natural magical auras to manifest into the general shape of wings behind them. They cannot be used for flight or as extra limbs and are purely aesthetic.
+<br><br>
+<h1><FONT COLOR="#4A338F">Corrupted Fiend Racials</FONT></h1>
+<b>Tough Skeleton</b><br>
+As his body has morphed to become a tool more than an actual body, his bones have increased in their natural durability from typical bones to steel grade materials. The downside to this being that healing takes longer than it normally would.
+<br><br>
+<b>Enhanced Strength</b><br>
+Foster's muscles have become much stronger in small amounts, allowing him to have a fairly thin (but still muscular) physique while still having twice the strength of the average human.
+<br><br>
+<b>Grotesque Wings</b><br>
+He has gained the ability to use his Corrupted blood in order to give life to the aesthetic aura of Hidden Wings, and grow actual flight-giving limbs to fill the sort of shape and stencil provided by the aura. He can lift himself to be up to fifty feet from the ground, and move twice as fast as the typical human while in the air.
+<br><br>
+<b>Corrupted Blood</b><br>
+Corruption can spread through Foster's blood like a terminal disease, contaminating that which it touches. Direct contact with flesh will contaminate other beings as well, especially if it gets inside their bodies (like their cuts or openings such as nose, mouth, eyes, etc).
+</div>
+<div id="tab13">
+<h1><FONT COLOR="#4A338F">Corrupted Fiend; "Artificer" Faith + Enchantment (High Archmage)</FONT></h1>
+<b>Sickening Touch</b><br>
+This spell has two possible ways of being cast, those being either by physical contact with the caster or in an AoE spell imbued into an object or surface much like an Enchantment. With direct contact, the spell is instant, but in AoE form it takes some time. When cast like an Enchantment, it seeks out any injured within an eighty foot radius of the spell's source with the intention of healing said injuries. If any can be detected it will spew a thick mist that obscures the entire area in vision, and when coming in contact with the target the mist will heal. Since non-Corrupted Fiends cannot be healed by Corrupted Faith magic, it will instead act like a poison, pumping extreme amounts of its taint into the afflicted's injuries in constant attempt to heal this strange injury it cannot seem to. The mist lasts for up to seven rotations, and can only be dispersed by spells of at least post high mage in ranking.
+<br><br>
+<b>Sickening Tendrils</b><br>
+Up to eight black wispy ethereal tendrils can be formed with this spell, which binds to an item like an Enchantment but can be deactivated and activated at any time before removal or destruction. Each tendril can be up to fifteen feet long on its own, but the less that are active the longer they can be, one singular one maxing the possible length at fifty feet. Being ethereal, it cannot be harmed by any nonmagic physical objects, and for magical constructs or energies it has a diamond durability. Able to phase through any materials lesser than its own durability, being directly touched will result in the spreading of Corruption in one's body. If in consistent contact for more than a singular rotation, the target will be successfully infected, and in the process of death and rebirth. While this spell can be placed on an object for eight rotations before needing to be recast, it does not have to remain active the entire time, saving some mana consumption.
+<br><br>
+<b>King's Blade</b><br>
+A construct made from Corrupted Faith magic which forms a blunt-edged greatsword, 5'4" in length, and diamond grade in durability. Typically requiring two hands to wield, if the caster's physical strength exceeds that of twice the average human's he may be able to wield it easily with one hand as though it were a rapier. The actual ability of this spell allows for the rather large sword to have any of the caster's enchantments active on its surface, so long as there are only two at a time at the very most. (This only applies to Enchantments in his arsenal that can actually stack with one another.) Up to two of these blades can be formed at one time, but to wield both at once with ease, the caster must be buffed to at least four times the strength of the average human.
+<br><br>
+<b>Knight's Shield</b><br>
+Another construct formed entirely out of Corrupted Faith magic, this time being a four-foot-tall and two-foot-wide shield which hooks onto the caster's desired arm and cannot be removed unless deactivated or destroyed. Also Diamond in durability, rather than allowing various Enchantments to be cast on it, it ambiently retains its own special one as part of the spell. When activated, the shield becomes incredibly heavy (requiring four times to normal strength of a human to even lift it) and shoots magical chain constructs made from the same material as the shield itself toward a target. If entanglement succeeds, it pulls the target fast toward the shield, until either smacking them against the hard surface or bringing them within reaching distance of the caster. The chains themselves will only remain active for five rotations at the most, can only stretch about forty feet from the shield, and only up to ten can exist at one time.
+<br><br>
+<b>Scatter</b><br>
+Crystallized constructs of Corrupted Faith mana, which can be up to five feet in length and one foot in width at the very most. While they are usually Diamond in durability, the caster can choose to make them any lesser grade he desires for whatever his intents and purposes may be, however, breaking them open will activate an enchanted "blessing," causing them to explode into a blast of explosive force that can cover up to a twenty foot radius. The explosion's damage capabilities will always be one rank less than the actual construct, allowing it to scatter pieces at high speeds in the form of dangerous shrapnel. If the blast of force is released in the vicinity of an ally it will pass over them and allow them to remain unharmed, and while the shrapnel grinding against an enemy will just cause damage, it will instead buff an ally's base armor (or flesh if they're not wearing any armor) up to an iron grade durability.
+<br><br>
+<h1><FONT COLOR="#4A338F">High Archmage Medium</FONT></h1>
+<b>Auroran Globe</b><br>
+A small ball that is glass-like in appearance but is actually made from diamond. When channeling his mana through it he can shoot small dart-shaped energy based projectiles with Diamond toughness out of it that can also carry his spells, whether they be Faith, Enchantment, or the mixture of both. These projectiles can be shot at--and reach speeds of--up to 50mph. The Auroran Globe can be controlled by Foster telepathically, allowing it to hover in air for up to ten feet away from his body if he so chooses. While the sphere itself is no bigger than a baseball, spells charged within it have their cooldown times shortened to one singular rotation. 
+</div>
+<div id="tab14">
+<h1><FONT COLOR="#4A338F">Corrupted Fiend; Faith (High Archmage)</FONT></h1>
+<i>"Faith mages are a completely support-oriented group of mages. Those who practice Faith hold the ability to mend wounds, lift curses and illnesses, bestow temporary magical boons to their allies, or create Holy Equipment which provide a permanent boon. Faith mages are also highly skilled in defensive arts, and are capable of erecting magical barriers. However, faith mana is completely non hostile (unless you're a Corrupted Fiend!), and no faith spell can ever cause harm to another being (unless faith magic specifically harms them)."</i>
+<br><br>
+<b>Busted Pace</b><br>
+A buff which grants the caster and three allied targets (so long as they remain within a fifty foot radius of the caster) quadrupled mental and physical speed (mental including reaction time and processing time) for six rotations. This buff stacks over whatever their base stats are as well as other buffs, capping at x8. Requires four cooldown rotations.
+<br><br>
+<b>Busted Strength</b><br>
+A buff which grants the caster and three allied targets (so long as they remain within a fifty foot radius of the caster) quadrupled physical strength for six rotations. This buff stacks over whatever their base stats are as well as other buffs, capping at x8. Requires four cooldown rotations.
+<br><br>
+<b>Pyra-Pillar</b><br>
+Four solid triangular pillars form around the caster in such a way that their bottom edges connect with one another to form a perfect square for him to stand inside of, while the sharp tips point away from him to the outside, effectively closing him off with diamond grade protection. Each pillar can be up to forty feet tall, and four feet wide at their widest points. While incredibly heavy, the caster can move them in their fused formation with his mind, and walk in tangent with the movement he creates. The whole construct can spin at blinding speeds around his body, effectively sawing through--or at least throwing to the side--whatever physical or magical substance it comes in contact with that it is capable of doing so to. When the caster wishes to deactivate the spell as a whole, the pillars will slide out away from him in whatever direction their top triangular point is facing in a way that looks as though some kind of force is violently pushing them. When they reach thirty feet away from the caster, they erupt into explosions that cover twenty foot radiuses, capable of ripping through diamond constructs.
+<br><br>
+<b>Jack-in-the-Box</b><br>
+This spell causes a box shaped barrier standing ten feet tall and ten feet wide, to form around the caster. While each part of the box is diamond in durability, they also possess a special quality known as "reflection" which can catch up to one equal ranked attack (+1 for each rank below barrier) and send it flying back toward its own caster or creator at twice the speed and force it originally traveled, before becoming a basic barrier construct. Each side of the box has this reflective quality on it separately, and the whole thing can even separate into six pieces and rearrange into whatever format the caster wishes so long as they retain their base square shape. The caster can also activate an ability with this spell that deactivates the top panel and sends his body shooting up and out of it at four times the speed of the average human until he is sixty feet into the air. Since the box cannot remain active when it is further than fifty feet than the caster, this action deactivates it altogether. The six panels that create the box can be summoned separately, one at a time, and are able to be telepathically controlled by the caster.
+<br><br>
+<b>Healer's Vengeance</b><br>
+Orbs of pure Corrupted Faith energy, equal in rank to the caster (so if they were physically solid and had a durability it would be diamond) which are only about as big as the average baseball upon creation, but expand and "pop" into ten-foot-radius blasts when prompted to do so by the caster. If a Corrupted Fiend is hit by this energy it instantly cleanses and heals their ailments (assuming said ailments were not caused by more powerful beings or magic), but if a non-Corrupt comes in contact with the violent energy the Corruption will rot their flesh and bone. These orbs are capable of passing through lower ranked physical constructs and objects (ranked, not toughness grades) as though they didn't even exist, and can lock onto Mana Signatures of lower ranking mages that the caster can actually see. Up to ten orbs can be active at once, capable of traveling at high speeds within an eighty foot radius of the caster. They will continuously follow their target (if lock-on is accomplished) for up to four rotations before sizzling out uselessly.
+</div>
+<div id="tab15">
+<h1><FONT COLOR="#4A338F">Corrupted Fiend; Enchantment (Mage)</FONT></h1>
+<i>"The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted."</i>
+<br><br>
+<b>Cutting Edge</b><br>
+Upon activation, this Enchantment will morph a sharp edge onto whatever it has been placed one, equal in cutting-durability to whatever the imbued item is made of. (Example: Wooden stick would only be able to cut through wood and other lower ranking materials, iron pole would only be able to cut through iron and other lower ranking materials, etc)
+<br><br>
+<b>Sting Electric</b><br>
+Coats whatever it has been cast on with a thin aura of electricity which can channel and zap straight through constructs or items of up to iron in durability as though they didn't even exist. Direct contact with this electric charge causes intense pain, stuns the afflicted, and completely numbs whatever part of their body was hit by the charge.
+<br><br>
+<b>Fair-Ice</b><br>
+A simple enchantment that very quickly sucks any thermal energy it can reach into itself from anything within a twenty foot radius. As long as Foster is inside this radius he can pick and choose what thermal energies he wants the enchantment to suck in, and which ones he wants it to ignore. Not only does being within radius of this spell cause one's limbs to go frigid and make movement much more difficult, but humans caught within the radius for six or more rotations will die. Anything with a weakness to cold or constant loss of thermal energy will die within four rotations.
+<br><br>
+<b>Fair-Fire</b><br>
+A simple spell that causes the enchanted item to be covered in flames without damaging the item itself. Flames will dissipate after Enchanter is 20 feet away from object. Costs minimal mana to continue the flames, so although this can be done for quite a while, it's not infinite (technically). Can be put out by any spell that could normally deal with flames, as long as they're Foster's rank (in Enchantment specifically) or below. 
+<br><br>
+<b>Titania's Arrow</b><br>
+An enchantment that doubles an object's natural speed as long as it's being thrown (or launched) as a projectile.
+</div>
+</div>
+</div>
